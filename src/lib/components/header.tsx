@@ -102,7 +102,7 @@ export default function Header() {
           ))}
         </nav>
 
-        <div className="ml-auto hidden min-w-[230px] items-center rounded-full border border-stone-200 bg-warm px-4 py-2 lg:flex">
+        <div className="ml-auto hidden min-w-[180px] items-center rounded-full border border-stone-200 bg-warm px-4 py-2 lg:flex 2xl:min-w-[230px]">
           <SearchIcon className="h-4 w-4 text-muted" />
           <input aria-label="Search flowers" placeholder="Search flowers" className="w-full bg-transparent px-3 text-sm outline-none placeholder:text-muted" />
         </div>
