@@ -117,7 +117,7 @@ export default function ProductBrowser({
         </aside>
         <section aria-live="polite">
           <div className="mb-4 text-sm text-muted">{filtered.length} products</div>
-          <ProductGrid products={filtered} />
+          <ProductGrid products={filtered} priorityCount={4} />
         </section>
       </div>
     </div>
