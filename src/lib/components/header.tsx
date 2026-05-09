@@ -107,12 +107,12 @@ export default function Header() {
           <input aria-label="Search flowers" placeholder="Search flowers" className="w-full bg-transparent px-3 text-sm outline-none placeholder:text-muted" />
         </div>
 
-        <a href={`tel:${business.tollFree.replace(/[^0-9]/g, "")}`} className="hidden items-center gap-2 text-sm font-semibold text-forest lg:flex">
+        <a href={`tel:${business.tollFree.replace(/[^0-9]/g, "")}`} className="hidden items-center gap-2 text-sm font-semibold text-forest 2xl:flex">
           <PhoneIcon className="h-4 w-4" />
           {business.tollFree}
         </a>
 
-        <button className="hidden h-10 w-10 items-center justify-center rounded-full border border-stone-200 text-forest transition hover:bg-blush lg:flex" aria-label="Cart">
+        <button className="hidden h-10 w-10 items-center justify-center rounded-full border border-stone-200 text-forest transition hover:bg-blush 2xl:flex" aria-label="Cart">
           <CartIcon className="h-5 w-5" />
         </button>
 

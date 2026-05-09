@@ -11,7 +11,7 @@ export default function Footer() {
         <div className="space-y-5">
           <Image src="/images/brand/logo-bell-bay-florist.svg" alt="Bell Bay Florist" width={220} height={61} className="bg-white" />
           <p className="max-w-sm text-sm leading-6 text-white/78">{business.tagline}</p>
-          <Image src="/images/brand/teleflora-proud-member.png" alt={business.networkAffiliation} width={144} height={40} />
+          <Image src="/images/brand/teleflora-proud-member.png" alt={business.networkAffiliation} width={147} height={19} />
         </div>
 
         <div>
@@ -66,4 +66,3 @@ export default function Footer() {
     </footer>
   )
 }
-
