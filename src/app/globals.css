@@ -2,11 +2,41 @@
 @tailwind components;
 @tailwind utilities;
 
+html {
+  scroll-behavior: smooth;
+}
+
 html, body {
   padding: 0;
   margin: 0;
+  background: #fafaf8;
+  color: #1a1a1a;
 }
 
 * {
   box-sizing: border-box;
+}
+
+body {
+  text-rendering: optimizeLegibility;
+}
+
+a {
+  text-underline-offset: 4px;
+}
+
+::selection {
+  background: #f5e6e0;
+  color: #2d5a3d;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    scroll-behavior: auto !important;
+    transition-duration: 0.01ms !important;
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+  }
 }

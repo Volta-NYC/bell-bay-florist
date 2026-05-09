@@ -1,0 +1,12 @@
+<svg width="310" height="86" viewBox="0 0 310 86" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title">
+  <title id="title">Bell Bay Florist</title>
+  <rect width="310" height="86" rx="0" fill="#FFFFFF"/>
+  <g transform="translate(18 15)">
+    <circle cx="24" cy="27" r="20" fill="#F5E6E0"/>
+    <path d="M24 6C29 16 42 18 42 29C42 39 34 47 24 47C14 47 6 39 6 29C6 18 19 16 24 6Z" fill="#2D5A3D"/>
+    <path d="M24 11C27 19 36 22 36 30C36 37 31 42 24 42C17 42 12 37 12 30C12 22 21 19 24 11Z" fill="#C9A96E"/>
+    <path d="M24 17C26 24 32 26 32 31C32 36 29 39 24 39C19 39 16 36 16 31C16 26 22 24 24 17Z" fill="#F5E6E0"/>
+  </g>
+  <text x="74" y="38" fill="#2D5A3D" font-family="Georgia, 'Times New Roman', serif" font-size="27" font-weight="700">Bell Bay Florist</text>
+  <text x="76" y="61" fill="#4A4A4A" font-family="Arial, sans-serif" font-size="12" letter-spacing=".8">SINCE 1976 - BAYSIDE, NY</text>
+</svg>
