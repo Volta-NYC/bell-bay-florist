@@ -112,7 +112,7 @@ export default function Header() {
           {business.tollFree}
         </a>
 
-        <button className="hidden h-10 w-10 items-center justify-center rounded-full border border-stone-200 text-forest transition hover:bg-blush 2xl:flex" aria-label="Cart">
+        <button className="hidden h-10 w-10 items-center justify-center rounded-full border border-stone-200 text-forest transition hover:bg-blush xl:flex" aria-label="Cart">
           <CartIcon className="h-5 w-5" />
         </button>
 
