@@ -1,5 +1,4 @@
 import type { Metadata } from "next"
-import Image from "next/image"
 import { notFound } from "next/navigation"
 import { business } from "@/data/business"
 import { formatPrice, getProduct, products, relatedProducts } from "@/data/products"
@@ -55,7 +54,7 @@ export default async function ProductPage({ params }: PageProps) {
             <h1 className="font-serif text-4xl leading-tight text-forest sm:text-5xl">{product.name}</h1>
             {product.price ? <p className="mt-4 text-2xl font-semibold text-ink">{formatPrice(product.price)}</p> : null}
             {product.description ? <p className="mt-5 leading-8 text-muted">{product.description}</p> : null}
-            <p className="mt-4 text-sm leading-7 text-muted">{business.notices.at(-1)}</p>
+            <p className="mt-4 text-sm leading-7 text-muted">{business.notices[business.notices.length - 1]}</p>
           </div>
 
           <ProductOptions product={product} />
@@ -71,4 +70,3 @@ export default async function ProductPage({ params }: PageProps) {
     </>
   )
 }
-

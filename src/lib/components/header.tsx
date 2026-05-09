@@ -2,6 +2,7 @@
 
 import Image from "next/image"
 import Link from "next/link"
+import type { ReactNode } from "react"
 import { useState } from "react"
 import { business } from "@/data/business"
 import { categories } from "@/data/categories"
@@ -21,7 +22,7 @@ function MegaMenu({
   children,
 }: {
   label: string
-  children: React.ReactNode
+  children: ReactNode
 }) {
   return (
     <div className="group relative">
@@ -160,4 +161,3 @@ export default function Header() {
     </header>
   )
 }
-

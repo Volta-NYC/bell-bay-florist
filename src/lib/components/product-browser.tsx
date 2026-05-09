@@ -1,6 +1,7 @@
 "use client"
 
 import { useMemo, useState } from "react"
+import type { ReactNode } from "react"
 import { colors, flowerTypes, priceRanges } from "@/data/categories"
 import type { Product } from "@/data/products"
 import ProductGrid from "./product-grid"
@@ -39,10 +40,10 @@ export default function ProductBrowser({
       .filter((product) => !selectedColors.length || selectedColors.some((color) => product.colors.includes(color)))
 
     if (sort === "lowest") {
-      return next.toSorted((a, b) => (a.price ?? Number.MAX_VALUE) - (b.price ?? Number.MAX_VALUE))
+      return [...next].sort((a, b) => (a.price ?? Number.MAX_VALUE) - (b.price ?? Number.MAX_VALUE))
     }
     if (sort === "highest") {
-      return next.toSorted((a, b) => (b.price ?? 0) - (a.price ?? 0))
+      return [...next].sort((a, b) => (b.price ?? 0) - (a.price ?? 0))
     }
     return next
   }, [products, selectedPrices, selectedTypes, selectedColors, sort])
@@ -123,7 +124,7 @@ export default function ProductBrowser({
   )
 }
 
-function FilterGroup({ title, children }: { title: string; children: React.ReactNode }) {
+function FilterGroup({ title, children }: { title: string; children: ReactNode }) {
   return (
     <fieldset>
       <legend className="mb-4 font-serif text-2xl text-forest">{title}</legend>
@@ -131,4 +132,3 @@ function FilterGroup({ title, children }: { title: string; children: React.React
     </fieldset>
   )
 }
-

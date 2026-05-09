@@ -1,5 +1,6 @@
 import "./globals.css"
 import type { Metadata } from "next"
+import type { ReactNode } from "react"
 import { DM_Sans, Playfair_Display } from "next/font/google"
 import { business } from "@/data/business"
 import Footer from "@/lib/components/footer"
@@ -37,7 +38,7 @@ export const metadata: Metadata = {
 export default function RootLayout({
   children,
 }: {
-  children: React.ReactNode
+  children: ReactNode
 }) {
   const localBusinessJsonLd = {
     "@context": "https://schema.org",

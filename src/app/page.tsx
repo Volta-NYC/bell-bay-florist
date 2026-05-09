@@ -1,4 +1,5 @@
 import Link from "next/link"
+import type { ReactNode } from "react"
 import { business, faqs } from "@/data/business"
 import { categories } from "@/data/categories"
 import { occasions } from "@/data/occasions"
@@ -110,7 +111,7 @@ export default function HomePage() {
   )
 }
 
-function TrustItem({ icon, title, text }: { icon: React.ReactNode; title: string; text: string }) {
+function TrustItem({ icon, title, text }: { icon: ReactNode; title: string; text: string }) {
   return (
     <article className="border border-stone-200 bg-warm p-6">
       <div className="mb-6 flex h-14 w-14 items-center justify-center rounded-full bg-blush text-forest">{icon}</div>
