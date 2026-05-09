@@ -22,9 +22,9 @@ export interface Product {
 }
 
 export const addOns = [
-  { name: "9 Inch Balloon" },
-  { name: "Box Of Chocolates" },
-  { name: "Stuffed Animals" },
+  { name: "9 Inch Balloon", image: "/images/addons/addon-9inch-balloon.jpg" },
+  { name: "Box Of Chocolates", image: "/images/addons/addon-box-of-chocolates.jpg" },
+  { name: "Stuffed Animals", image: "/images/addons/addon-stuffed-animals.jpg" },
 ] as const
 
 const standard = (price?: number) => [{ name: "Standard", price }]
@@ -51,6 +51,7 @@ export const products: Product[] = [
   product({
     name: "Deal of the Day",
     price: 50,
+    image: "/images/products/deal-of-the-day.jpg",
     category: ["spring-bouquets"],
     occasions: ["birthday", "just-because", "thank-you", "mothers-day"],
     flowerTypes: ["Roses"],
@@ -60,6 +61,7 @@ export const products: Product[] = [
   product({
     name: "Sensational",
     price: 125,
+    image: "/images/products/sensational.jpg",
     category: ["lavish", "flowers-in-a-vase"],
     occasions: ["anniversary", "birthday", "mothers-day"],
     flowerTypes: ["Roses", "Lilies"],
@@ -89,6 +91,7 @@ export const products: Product[] = [
   product({
     name: "Golden Garden Dried Floral Bouquet",
     price: 35,
+    image: "/images/products/golden-garden-dried-floral-bouquet.jpg",
     category: ["flowers-in-a-gift"],
     occasions: ["birthday", "just-because", "thank-you"],
     flowerTypes: ["Roses"],
@@ -98,6 +101,7 @@ export const products: Product[] = [
   product({
     name: "A Dozen Premium Multi-Color Roses",
     price: 100,
+    image: "/images/products/a-dozen-premium-multi-color-roses.jpg",
     category: ["roses", "lavish", "flowers-in-a-vase"],
     occasions: ["birthday", "anniversary", "mothers-day"],
     flowerTypes: ["Roses"],
@@ -107,6 +111,7 @@ export const products: Product[] = [
   product({
     name: "Bayside Beauty",
     price: 79.95,
+    image: "/images/products/bayside-beauty.jpg",
     category: ["flowers-in-a-vase", "lavish"],
     occasions: ["birthday", "thank-you", "mothers-day"],
     flowerTypes: ["Roses", "Lilies"],
@@ -148,6 +153,7 @@ export const products: Product[] = [
   product({
     name: "Willow Garden",
     price: 74.95,
+    image: "/images/products/willow-garden.jpg",
     category: ["plants", "spring-bouquets"],
     occasions: ["get-well", "sympathy", "just-because"],
     flowerTypes: ["Plants"],
@@ -180,6 +186,7 @@ export const products: Product[] = [
   product({
     name: "A Dozen Multi-Color Roses",
     price: 70,
+    image: "/images/products/a-dozen-multi-colored-roses.jpg",
     category: ["roses", "flowers-in-a-vase"],
     occasions: ["birthday", "anniversary", "mothers-day"],
     flowerTypes: ["Roses"],
@@ -211,6 +218,7 @@ export const products: Product[] = [
   product({
     name: "Brighter Days",
     price: 69.95,
+    image: "/images/products/brighter-days.jpg",
     category: ["spring-bouquets", "flowers-in-a-vase"],
     occasions: ["birthday", "get-well", "thank-you", "just-because"],
     flowerTypes: ["Roses", "Daisies"],
@@ -221,6 +229,7 @@ export const products: Product[] = [
   product({
     name: "Timeless",
     price: 105,
+    image: "/images/products/timeless.jpg",
     category: ["lavish", "flowers-in-a-vase"],
     occasions: ["anniversary", "sympathy", "mothers-day"],
     flowerTypes: ["Roses", "Lilies"],
@@ -231,6 +240,7 @@ export const products: Product[] = [
   product({
     name: "Possibly Pink",
     price: 65.95,
+    image: "/images/products/possibly-pink.jpg",
     category: ["spring-bouquets", "flowers-in-a-vase"],
     occasions: ["birthday", "thank-you", "mothers-day"],
     flowerTypes: ["Roses", "Carnations"],
@@ -240,6 +250,7 @@ export const products: Product[] = [
   product({
     name: "Sunshine and Smiles-Deluxe",
     price: 79.95,
+    image: "/images/products/sunshine-and-smiles-deluxe.jpg",
     category: ["spring-bouquets", "flowers-in-a-vase"],
     occasions: ["birthday", "get-well", "thank-you"],
     flowerTypes: ["Daisies", "Roses"],
@@ -280,6 +291,7 @@ export const products: Product[] = [
   product({
     name: "Irresistable",
     price: 59.95,
+    image: "/images/products/irresistable.jpg",
     category: ["spring-bouquets", "flowers-in-a-vase"],
     occasions: ["birthday", "just-because", "thank-you"],
     flowerTypes: ["Roses", "Carnations"],
@@ -290,6 +302,7 @@ export const products: Product[] = [
   product({
     name: "Deep Emotions Roses",
     price: 74,
+    image: "/images/products/deep-emotions-roses.jpg",
     category: ["roses", "flowers-in-a-vase"],
     occasions: ["anniversary", "mothers-day"],
     flowerTypes: ["Roses"],
@@ -299,6 +312,7 @@ export const products: Product[] = [
   product({
     name: "Sunny Days",
     price: 53.95,
+    image: "/images/products/sunny-days.jpg",
     category: ["spring-bouquets", "flowers-in-a-vase"],
     occasions: ["birthday", "get-well", "thank-you"],
     flowerTypes: ["Daisies", "Roses"],
@@ -308,6 +322,7 @@ export const products: Product[] = [
   product({
     name: "Simple Pleasures",
     price: 44.95,
+    image: "/images/products/simple-pleasures.jpg",
     category: ["spring-bouquets", "flowers-in-a-vase"],
     occasions: ["birthday", "just-because", "thank-you"],
     flowerTypes: ["Carnations", "Chrysanthemums"],
@@ -317,6 +332,7 @@ export const products: Product[] = [
   product({
     name: "Colorful Basket Arrangement",
     price: 44.95,
+    image: "/images/products/colorful-basket-arrangement.jpg",
     category: ["flowers-in-a-basket", "spring-bouquets"],
     occasions: ["birthday", "get-well", "thank-you"],
     flowerTypes: ["Carnations", "Chrysanthemums"],
@@ -441,6 +457,7 @@ export const products: Product[] = [
   product({
     name: "Arrive In Style",
     price: 59.95,
+    image: "/images/products/arrive-in-style.jpg",
     category: ["flowers-in-a-vase", "spring-bouquets"],
     occasions: ["birthday", "thank-you", "mothers-day"],
     flowerTypes: ["Roses", "Lilies"],
@@ -450,6 +467,7 @@ export const products: Product[] = [
   product({
     name: "Sweetness",
     price: 59.95,
+    image: "/images/products/sweetness.jpg",
     description:
       "Beckoning with sunlit grace and beauty, this warm and uplifting bouquet is ready to offer cheer and flowering elegance to your recipient today. A collection of pink blooms, including Peruvian Lilies, carnations, mini carnations, and roses, are highlighted by yellow and white chrysanthemums, and lush greens. Presented in a classic clear glass vase.",
     category: ["flowers-in-a-vase", "spring-bouquets"],
@@ -459,6 +477,7 @@ export const products: Product[] = [
   }),
   product({
     name: "Grand Bouquet",
+    image: "/images/products/grand-bouquet.jpg",
     description:
       "When great events call for something really grand, send this extraordinary bouquet with its colorful array of flowers. Callas, larkspur, roses, snapdragons and gerberas arrive in a ceramic urn.",
     category: ["lavish", "flowers-in-a-gift"],
@@ -468,6 +487,7 @@ export const products: Product[] = [
   }),
   product({
     name: "Just for You",
+    image: "/images/products/just-for-you.jpg",
     description:
       "This striking array of pink and purple flowers is the perfect way to show just how much you're thinking of someone special. Oriental lilies, stock, delphinium and gerberas arranged in a natural vine basket.",
     category: ["flowers-in-a-basket", "lavish"],
@@ -477,6 +497,7 @@ export const products: Product[] = [
   }),
   product({
     name: "Calypso",
+    image: "/images/products/calypso.jpg",
     description:
       "Remind someone of their favorite tropical vacation - hot-colored blossoms in an oceanic blue glass cube vase. Hot pink gerberas, orange roses, bi-color dahlias, yellow miniature carnations, yellow Mokara orchids and blue delphinium, accented with seeded eucalyptus and oregonia.",
     category: ["flowers-in-a-vase", "flowers-in-a-gift", "spring-bouquets"],
@@ -486,6 +507,7 @@ export const products: Product[] = [
   }),
   product({
     name: "Lavender Garden",
+    image: "/images/products/lavender-garden.jpg",
     description:
       "Passionate purples and lavenders convey your sincerest wishes. Daisies, purple carnations, larkspur and purple statice accented by a chiffon bow.",
     category: ["spring-bouquets"],
@@ -505,6 +527,7 @@ export const products: Product[] = [
   }),
   product({
     name: "Garden Fresh Blooms",
+    image: "/images/products/garden-fresh-blooms.jpg",
     description:
       "What refreshes your spirits more than a stroll through a country garden? Give someone special an arrangement that inspires the senses.",
     category: ["spring-bouquets", "flowers-in-a-vase"],
@@ -545,4 +568,3 @@ export const relatedProducts = (product: Product, limit = 4) =>
     .slice(0, limit)
 
 export const formatPrice = (price?: number) => (typeof price === "number" ? `$${price.toFixed(2)}` : "")
-

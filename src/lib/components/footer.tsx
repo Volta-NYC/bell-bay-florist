@@ -9,7 +9,7 @@ export default function Footer() {
     <footer className="border-t border-stone-200 bg-forest text-white">
       <div className="mx-auto grid max-w-7xl gap-10 px-4 py-14 lg:grid-cols-[1.2fr_.8fr_.8fr_1fr] lg:px-6">
         <div className="space-y-5">
-          <Image src="/images/brand/logo-bell-bay-florist.svg" alt="Bell Bay Florist" width={220} height={61} className="bg-white" />
+          <Image src="/images/brand/logo-footer.png" alt="Bell Bay Florist" width={364} height={123} className="h-auto w-[220px] bg-white" />
           <p className="max-w-sm text-sm leading-6 text-white/78">{business.tagline}</p>
           <Image src="/images/brand/teleflora-proud-member.png" alt={business.networkAffiliation} width={147} height={19} />
         </div>

@@ -46,7 +46,7 @@ export default function Header() {
     <header className="sticky top-0 z-50 border-b border-stone-200 bg-white/95 backdrop-blur">
       <div className="mx-auto flex max-w-7xl items-center gap-4 px-4 py-3 lg:px-6">
         <Link href="/" className="flex shrink-0 items-center" aria-label="Bell Bay Florist home">
-          <Image src="/images/brand/logo-bell-bay-florist.svg" alt="Bell Bay Florist" width={210} height={58} priority className="h-12 w-auto" />
+          <Image src="/images/brand/logo.png" alt="Bell Bay Florist" width={364} height={123} priority className="h-12 w-auto" />
         </Link>
 
         <nav className="ml-4 hidden items-center gap-6 xl:flex" aria-label="Primary navigation">

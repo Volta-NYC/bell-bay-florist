@@ -1,6 +1,7 @@
 "use client"
 
 import { useMemo, useState } from "react"
+import Image from "next/image"
 import type { Product } from "@/data/products"
 import { formatPrice } from "@/data/products"
 
@@ -43,6 +44,9 @@ export default function ProductOptions({ product }: { product: Product }) {
           {product.addOns.map((item) => (
             <label key={item.name} className="flex cursor-pointer items-center gap-3 border border-stone-200 bg-white px-4 py-3 text-sm text-ink">
               <input type="checkbox" checked={extras.includes(item.name)} onChange={() => toggleExtra(item.name)} className="h-4 w-4 accent-forest" />
+              {item.image ? (
+                <Image src={item.image} alt="" width={75} height={75} className="h-12 w-12 object-cover" />
+              ) : null}
               {item.name}
             </label>
           ))}
@@ -93,4 +97,3 @@ export default function ProductOptions({ product }: { product: Product }) {
     </div>
   )
 }
-
