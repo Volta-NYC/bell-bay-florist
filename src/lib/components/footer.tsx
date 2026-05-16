@@ -60,7 +60,12 @@ export default function Footer() {
       <div className="border-t border-white/12">
         <div className="mx-auto flex max-w-7xl flex-col gap-2 px-4 py-5 text-xs text-white/65 sm:flex-row sm:items-center sm:justify-between lg:px-6">
           <span>© {new Date().getFullYear()} {business.name}</span>
-          <span>{business.networkAffiliation}</span>
+          <span className="flex flex-col gap-2 sm:flex-row sm:items-center sm:gap-4">
+            <span>{business.networkAffiliation}</span>
+            <a href="https://voltanyc.org/" className="no-underline" style={{ color: "#82c341" }}>
+              Made by Volta
+            </a>
+          </span>
         </div>
       </div>
     </footer>
