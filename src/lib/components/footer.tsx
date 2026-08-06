@@ -62,8 +62,8 @@ export default function Footer() {
           <span>© {new Date().getFullYear()} {business.name}</span>
           <span className="flex flex-col gap-2 sm:flex-row sm:items-center sm:gap-4">
             <span>{business.networkAffiliation}</span>
-            <a href="https://voltanyc.org/" className="no-underline" style={{ color: "#82c341" }}>
-              Made by Volta
+            <a href="https://www.novusnyc.org/" className="no-underline text-[#F6B78D] hover:text-[#F6B78D]">
+              Made by Novus
             </a>
           </span>
         </div>
